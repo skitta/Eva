@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export HUBOT_BEARYCHAT_TOKENS=b52b456a00c66968322e2c492af6eb9e
-export HUBOT_BEARYCHAT_MODE=rtm
-./bin/hubot -a bearychat
+export HUBOT_SLACK_TOKEN=xoxb-14575220466-eHugFqaVR9Nr5mSMLUpeq4Y4
+./bin/hubot -a slack
 
