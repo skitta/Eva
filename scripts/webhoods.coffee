@@ -15,10 +15,10 @@
 #   These commands are grabbed from comment blocks at the top of each file.
 
 module.exports = (robot) ->
-  robot.router.post '/hubot/webhoods', (req, res) ->
-    data = req.body
-    secret = data.secret
-    robot.messageRoom "express", "#{secret}"
+  robot.router.post '/hubot/webhoods/express', (req, res) ->
+    data = if req.body.payload? then JSON.parse req.body.payload else req.body
+    msg = data.message
+    robot.messageRoom "express", "#{msg}"
 
     res.send 'ok'
 
