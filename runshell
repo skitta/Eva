@@ -1,7 +1,4 @@
 #!/bin/bash
 
-export HUBOT_SLACK_TOKEN=xoxb-14575220466-HDrshxWLVi0juEZLVXeGNbYr
 export MONGOLAB_URI=mongodb://skitta:2008315mlab@ds058369.mlab.com:58369/rocketchat
-
-./bin/hubot -a slack
-
+./bin/hubot
