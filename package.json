@@ -8,6 +8,7 @@
     "hubot": "^2.19.0",
     "hubot-help": "^0.2.0",
     "hubot-mongodb-brain": "^0.1.0",
+    "hubot-reload-scripts": "^0.1.4",
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.17.2",
     "hubot-slack": "^4.3.2"
