@@ -1,4 +1,0 @@
-#!/bin/bash
-
-export MONGOLAB_URI=mongodb://skitta:2008315mlab@ds058369.mlab.com:58369/rocketchat
-./bin/hubot
