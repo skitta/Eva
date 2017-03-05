@@ -9,7 +9,10 @@ module.exports = (robot) ->
     data = if req.body.payload? then JSON.parse req.body.payload else req.body
     msg = data.message
     robot.messageRoom "express", "#{msg}"
+    res.send "ok"
 
-    res.send 'ok'
-
-# IT WORKED !!!!!
+  robot.router.post '/hubot/webhoods/weather', (req, res) ->
+    data = if req.body.payload? then JSON.parse req.body.payload else req.body
+    msg = data.message
+    robot.messageRoom "general", "#{msg}"
+    res.send "ok"
