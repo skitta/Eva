@@ -5,10 +5,10 @@
 #   hubot track express <express number>  - Add track task to server.
 
 module.exports = (robot) ->
-  robot.respond /track express (\w+\d+)$/i, (msg) ->
+  robot.respond /track express (\w+\d+)/i, (msg) ->
     q = msg.match[1]
     @exec = require('child_process').exec
-    command = "goquery express -a #{q}"
+    command = "/home/pi/bin/goquery express -a #{q}"
     msg.send "ok, add an express tracker."
 
     @exec command, (error, stdout, stderr) ->
