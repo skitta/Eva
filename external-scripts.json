@@ -2,6 +2,5 @@
   "hubot-help",
   "hubot-rules",
   "hubot-diagnostics",
-  "hubot-reload-scripts",
-  "hubot-mongodb-brain"
+  "hubot-reload-scripts"
 ]
