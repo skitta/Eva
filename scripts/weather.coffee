@@ -1,15 +1,15 @@
 # Description:
-#   Track your express packages.
+#   Today's weather information for a given city.
 #
 # Commands:
-#   hubot track express <express number>  - Add track task to server.
+#   hubot weather <city>  - query today's weather of <city>.
 
 module.exports = (robot) ->
-  robot.respond /track express (\w+\d+)$/i, (msg) ->
+  robot.respond /weather (\w+)$/i, (msg) ->
     q = msg.match[1]
     @exec = require('child_process').exec
-    command = "goquery express -a #{q}"
-    msg.send "ok, add an express tracker."
+    command = "goquery weather #{q}"
+    msg.send "The weather information has send to #general."
 
     @exec command, (error, stdout, stderr) ->
       if error
