@@ -1,0 +1,22 @@
+; Hubot systemd unit file
+; Place in '/etc/systemd/system/hubot.service', then 'systemctl deamon-reload' and 'service hubot start'.
+[Unit]
+Description=Hubot
+Requires=network.target
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/src/Eva
+User=root
+
+Restart=always
+RestartSec=10
+
+; Configure Hubot environment variables, make sure to use quotes around whitespace as shown below.
+; Environment=HUBOT_SLACK_TOKEN="REDACTED" HUBOT_LOG_LEVEL="info"
+
+ExecStart=/home/pi/src/Eva/run
+
+[Install]
+WantedBy=multi-user.target
