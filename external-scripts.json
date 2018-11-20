@@ -1,6 +1,5 @@
 [
   "hubot-help",
   "hubot-rules",
-  "hubot-diagnostics",
-  "hubot-reload-scripts"
+  "hubot-diagnostics"
 ]

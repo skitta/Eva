@@ -2,10 +2,10 @@
 #   Track your express packages.
 #
 # Commands:
-#   hubot where are you  - run ipconfig or ifconfig.
+#   hubot ip address  - run ipconfig or ifconfig.
 
 module.exports = (robot) ->
-  robot.respond /where are you/i, (msg) ->
+  robot.respond /ip address/i, (msg) ->
     q = msg.match[1]
     @exec = require('child_process').exec
     if process.platform.match(/win/gi)
